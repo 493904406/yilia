@@ -80,6 +80,7 @@
 
 
 <% if (!index && post.comments){ %>
+
   <% if (theme.duoshuo){ %>
   <%- partial('post/duoshuo', {
       key: post.slug,
@@ -103,6 +104,8 @@
       url: config.url+url_for(post.path)
     }) %>
   <% } %>
+
+
 
   <% if (theme.disqus || config.disqus_shortname){ %>
     <section id="comments">
